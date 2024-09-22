@@ -1,0 +1,55 @@
+/* Estilo base - Desktop */
+body {
+    background-color: #8FBCB3; /* Define a cor de fundo como um tom de verde claro */
+    display: flex; /* Aplica o modelo de exibição flexbox para o corpo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo no topo verticalmente */
+    height: 100vh; /* Define a altura do body como 100% da altura da tela visível */
+    margin: 0; /* Remove margens padrão */
+}
+
+.card {
+    background-color: white; /* Define o fundo da classe card como branco */
+    color: #788895; /* Define a cor do texto como cinza azulado */
+    padding: 20px; /* Adiciona espaço interno de 20px ao redor do conteúdo */
+    margin-top: 20px; /* Adiciona margem superior de 20px */
+    text-align: center; /* Centraliza o texto */
+}
+
+p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+/* Tablet (largura máxima de 768px) COMENTADO */
+@media (max-width: 768px) {
+    /* Aplica os estilos dentro desse bloco apenas para telas com largura máxima de 768px (dispositivos como tablets) */
+    
+    body {
+        background-color: #FCE6A8; /* Define a cor de fundo do body como um tom amarelo claro */
+        display: flex; /* Define o modelo de exibição do body como flexbox para alinhar os elementos dentro dele */
+        justify-content: center; /* Centraliza horizontalmente o conteúdo do body */
+        align-items: center; /* Centraliza verticalmente o conteúdo do body */
+        height: 100vh; /* Define a altura do body como 100% da altura da viewport (altura da tela visível) */
+        margin: 0; /* Remove a margem padrão do body */
+    }
+
+    .card {
+        background-color: #A020F0; /* Define a cor de fundo da classe card como roxo */
+        color: #8FBCB3; /* Define a cor do texto dentro da classe card como verde claro */
+        border: 2px solid #4B0082; /* Adiciona uma borda roxa escura com 2px de espessura à classe card */
+        border-radius: 0; /* Define que não haverá arredondamento nos cantos da borda */
+        padding: 20px; /* Adiciona 20px de espaço interno (padding) ao redor do conteúdo dentro da classe card */
+        text-align: center; /* Centraliza o texto dentro da classe card */
+    }
+}
+
+/* Mobile (largura máxima de 480px) */
+@media (max-width: 480px) {
+    body {
+        background-color: #D2B48C; /* Define a cor de fundo como bege */
+    }
+
+    .card {
+        display: none; /* Esconde o elemento card em telas com largura máxima de 480px */
+    }
+}
